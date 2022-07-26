@@ -3,6 +3,29 @@ body {
   padding: 0;
 }
 
-.hide--nav {
-  transform: translateY(-100px);
+nav {
+  z-index: -100;
+  transition: top 0.25s;
+}
+
+.showed {
+  color: white;
+}
+
+.cover__image {
+  width: 100vw !important;
+}
+
+.med_screen_toggler {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .cover__image {
+    width: 130vw !important;
+  }
+
+  nav {
+    position: absolute !important;
+  }
 }
