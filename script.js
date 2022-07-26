@@ -1,13 +1,16 @@
 "use strict";
 const navToggler = document.querySelector(".med_screen_toggler");
 const navBar = document.querySelector("nav");
+const headerFirstRow = document.querySelector("#headerFirstRow");
 
 const hideNavBar = function () {
+  headerFirstRow.classList.add("header__border");
   navBar.style.top = "-100px";
   navToggler.classList.remove("showed");
 };
 
 const showNavBar = function () {
+  headerFirstRow.classList.remove("header__border");
   if (screen.width > 767) {
     navBar.style.top = "0";
     return;
@@ -17,7 +20,7 @@ const showNavBar = function () {
 
 // Hide Nav when scrolled
 window.addEventListener("scroll", function () {
-  const scrollLimit = 100;
+  const scrollLimit = 20;
 
   console.log(window.pageYOffset);
 
@@ -32,6 +35,7 @@ window.addEventListener("scroll", function () {
   if (window.pageYOffset <= scrollLimit) {
     navToggler.classList.add("d-none");
     navToggler.classList.remove("showed");
+    navBar.style.transition = "0s";
 
     showNavBar();
   }
@@ -41,6 +45,7 @@ window.addEventListener("scroll", function () {
 navToggler.addEventListener("click", function () {
   this.classList.toggle("showed");
   if (this.className.includes("showed")) {
+    navBar.style.transition = "0.25s";
     showNavBar();
   } else {
     hideNavBar();
