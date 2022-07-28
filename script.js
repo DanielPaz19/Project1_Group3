@@ -10,8 +10,9 @@ const hideNavBar = function () {
 };
 
 const showNavBar = function () {
-  headerFirstRow.classList.remove("header__border");
   if (screen.width > 767) {
+    headerFirstRow.classList.remove("header__border");
+
     navBar.style.top = "0";
     return;
   }
@@ -28,14 +29,16 @@ window.addEventListener("scroll", function () {
     if (navToggler.className.includes("showed")) return;
     if (screen.width > 767) {
       navToggler.classList.remove("d-none");
+      navToggler.classList.add("d-md-inline-block");
       hideNavBar();
     }
   }
 
   if (window.pageYOffset <= scrollLimit) {
     navToggler.classList.add("d-none");
+    navToggler.classList.remove("d-md-inline-block");
     navToggler.classList.remove("showed");
-    navBar.style.transition = "0s";
+    navBar.style.transition = "0.01s";
 
     showNavBar();
   }

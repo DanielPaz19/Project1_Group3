@@ -16,75 +16,66 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
+
     <title>PACC</title>
   </head>
   <body>
-    <header class="sticky-top">
-      <div class="container-fluid bg-white pt-2 px-md-5" id="headerFirstRow">
-        <div class="row align-items-center">
-          <div class="col-3 d-md-none text-start">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <i class="bi bi-list navbar-toggler-icon fs-1"></i>
-              <!-- <span class="navbar-toggler-icon"></span> -->
-            </button>
-          </div>
-          <div
-            class="col-md-2 col-6 order-md-1 order-1 text-center text-md-center pt-2 py-md-2"
+    <header class="container-fluid p-0 sticky-top">
+      <div
+        class="d-flex bg-secondary align-items-center header__border py-2 px-3"
+        id="headerFirstRow"
+      >
+        <span class="med_screen_toggler fs-3 d-inline-block ms-4 d-none"
+          ><i class="bi bi-list"></i
+        ></span>
+        <div
+          class="bg-secondary container-fluid py-2 d-flex flex-row flex-wrap justify-content-between align-items-center"
+        >
+          <button
+            class="navbar-toggler order-1 d-md-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <div class="row">
-              <div class="d-none col-md-3 med_screen_toggler p-0">
-                <span class="fs-2 text-center">
-                  <i class="bi bi-list"> </i>
-                </span>
-              </div>
-              <div class="col-md-6 p-0">
-                <a href="index.html">
-                  <img src="./img/logo.png" alt="" height="60px" />
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md col-12 order-md-2 order-3 px-md-5">
-            <form action="" class="py-2">
-              <div class="input-group">
-                <input
-                  class="form-control"
-                  type="text"
-                  name=""
-                  id=""
-                  placeholder="What are you looking for?"
-                />
-                <button class="btn btn-lg btn-primary input-group-text">
-                  <i class="bi bi-search"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-1 col-3 order-md-3 order-2 text-end pe-4">
-            <!-- <div class="fs-2 text-dark">
-              <i class="bi bi-cart3"></i>
-            </div> -->
-            <a class="position-relative">
-              <i class="bi bi-cart3 fs-2 text-primary"></i>
-              <span
-                class="position-absolute start-100 translate-middle badge rounded-pill bg-danger"
-                style="top: -12px"
-              >
-                10
-                <span class="visually-hidden">unread messages</span>
-              </span>
+            <span class="navbar-toggler-icon fs-1 d-inline-block"
+              ><i class="bi bi-list"></i
+            ></span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+          <div class="order-2 order-md-1 mb-2 mb-md-0">
+            <a href="index.html">
+              <img
+                src="./img/icon.png"
+                alt=""
+                height="50px"
+                style="filter: grayscale()"
+              />
             </a>
+          </div>
+          <form action="" class="order-md-2 py-2">
+            <div class="input-group w-100">
+              <input
+                class="form-control"
+                type="text"
+                name=""
+                id=""
+                placeholder="What are you looking for?"
+              />
+              <button class="btn btn-lg btn-dark input-group-text">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="fs-2 order-3 order-md-3 text-dark">
+            <i class="bi bi-cart3"></i>
           </div>
         </div>
       </div>
+
       <nav
         class="container-fluid navbar navbar-expand-lg bg-light p-md-2 p-0 header__border"
       >
@@ -128,7 +119,6 @@
         </div>
       </nav>
     </header>
-
     <div class="container-fluid p-0 scroll--check overflow-hidden">
       <img
         src="./img/cover3.jpg"
