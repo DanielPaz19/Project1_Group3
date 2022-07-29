@@ -15,7 +15,7 @@ nav {
 }
 
 .bg-dark {
-  background-color: #1c0b19;
+  background-color: #1c0b19 !important;
 }
 
 .text-primary {
