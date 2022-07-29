@@ -7,6 +7,10 @@ nav {
   z-index: -100;
 }
 
+.bg-primary {
+  background-color: #160fc1 !important;
+}
+
 .header__border {
   border-bottom: blue 3px solid;
 }
