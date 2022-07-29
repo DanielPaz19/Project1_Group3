@@ -11,25 +11,29 @@ nav {
 }
 
 .bg-primary {
-  background-color: #160fc1 !important;
+  background-color: #221bf7 !important;
+}
+
+.bg-dark {
+  background-color: #1c0b19;
 }
 
 .text-primary {
-  color: #160fc1 !important;
+  color: #221bf7 !important;
 }
 
 .btn-primary {
   color: #fdfffc;
-  background-color: #160fc1;
-  border-color: #160fc1;
+  background-color: #221bf7;
+  border-color: #221bf7;
 }
 
 .form-control {
-  border-color: #160fc1;
+  border-color: #221bf7;
 }
 
 .header__border {
-  border-bottom: blue 3px solid;
+  border-bottom: #221bf7 3px solid;
 }
 
 .showed {
