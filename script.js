@@ -23,8 +23,6 @@ const showNavBar = function () {
 window.addEventListener("scroll", function () {
   const scrollLimit = 20;
 
-  console.log(window.pageYOffset);
-
   if (window.pageYOffset >= scrollLimit) {
     if (navToggler.className.includes("showed")) return;
     if (screen.width > 767) {

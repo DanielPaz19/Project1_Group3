@@ -14,8 +14,8 @@ nav {
   background-color: #221bf7 !important;
 }
 
-.bg-dark {
-  background-color: #1c0b19 !important;
+.bg-gray {
+  background-color: darkgrey !important;
 }
 
 .text-primary {
@@ -29,11 +29,11 @@ nav {
 }
 
 .form-control {
-  border: 2px solid #221bf7 !important;
+  border: 1px solid black !important;
 }
 
 .header__border {
-  border-bottom: #221bf7 4px solid;
+  border-bottom: #221bf7 3px solid;
 }
 
 .showed {
