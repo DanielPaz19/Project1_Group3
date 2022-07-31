@@ -1,0 +1,51 @@
+1. DOCUMENTATION (Deadline: August 8)
+  - Page Information
+    - Site For?
+    - Expect to find or do there?
+    - Website Primary Aim?
+    - Competitor Sites?
+    - Why Choose that Color
+    - Why Use that Font
+  ✅ Site Map
+
+2. CREATE PAGES (Deadline: August 8)
+  - About 
+  ✅ Cart
+  - Checkout
+  - Contact Us
+  - Log-in
+  - My Account
+  - Payment
+  ✅ Product Details
+  ✅ Products
+  - Shipping
+  - Wishlist
+
+3. FINALIZE DESIGN (Deadline: August 9)
+  - Check Spacing
+  - Check Alignment
+  - Check Responsiveness
+
+  1. About
+  2. Cart
+  3. Checkout
+  4. Contact Us
+  5. Log-in
+  6. My Account
+  7. Payment
+  8. Product Details
+  9. Products
+  10. Shipping
+  11. Wishlist
+
+4. PRESENTATION
+
+
+ ---- NON-PRIORITY ----- 
+
+5. Functionality
+  - Cart badge adding when item is added
+  - When Star is clicked, Star Icon will filled/unfilled indicating that item is added/removed to the wishlist. Notifying user when item is added/removed from wishlist
+  - Remove cart Items
+  - Add/Subtract Cart Item Qty
+  
