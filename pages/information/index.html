@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PACC</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <!-- Header First Row -->
+      <div
+        class="container-fluid bg-gray pt-2 px-md-5 py-md-1"
+        id="headerFirstRow"
+      >
+        <div class="row align-items-center">
+          <div class="col d-md-none text-start">
+            <button
+              class="navbar-toggler text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list navbar-toggler-icon fs-1"></i>
+              <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+          </div>
+          <div
+            class="col-md-2 col order-md-1 order-1 text-center text-md-center pt-2 py-md-1"
+          >
+            <div class="row">
+              <div class="d-none col-md-3 med_screen_toggler p-0 text-white">
+                <span class="fs-2 text-center">
+                  <i class="bi bi-list"> </i>
+                </span>
+              </div>
+              <div class="col-md-6 p-0">
+                <a href="../../index.html">
+                  <img
+                    src="../../img/horizontal-logo.png"
+                    alt=""
+                    height="75px"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md col-12 text-center order-md-2 pt-2 order-3 px-md-5"
+          >
+            <form action="" class="py-2">
+              <div class="input-group">
+                <input
+                  class="form-control px-md-3"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="What are you looking for?"
+                />
+                <button class="btn btn-lg btn-primary input-group-text">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-1 col order-md-3 order-2 text-end pe-4">
+            <!-- <div class="fs-2 text-dark">
+              <i class="bi bi-cart3"></i>
+            </div> -->
+            <a class="position-relative">
+              <i class="bi bi-cart3 fs-2 text-white"></i>
+              <span
+                class="position-absolute start-100 translate-middle badge rounded-pill bg-danger"
+                style="top: -12px"
+              >
+                10
+                <span class="visually-hidden">cart</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Header First Row -->
+
+      <!-- Navigation Bar -->
+      <nav
+        class="container-fluid navbar navbar-expand-lg bg-light p-md-2 p-0 header__border"
+      >
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 mx-md-5 fw-bold gap-md-3"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link text-dark"
+                  aria-current="page"
+                  href="index.html"
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page">Themes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" aria-current="page"
+                  >Latest Releases</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Delivery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Rewards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Help</a>
+              </li>
+            </ul>
+            <div class="d-flex flex-fill justify-content-end">
+              <a href="" class="text-dark fw-bold nav-link"> Login </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation Bar -->
+    </header>
+
+    <!-- Information page start --> 
+  <div class="row mx-5 my-5 px-5 g-3">
+  <!-- Breadcrumbs -->
+    <div class="col-md-12">
+      <div class="col-md-12">
+        <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <li class="breadcrumb-item" completed><a href="../../pages/cart/index.html" style="text-decoration: none">Cart</a></li>
+          <li class="breadcrumb-item fw-bold" aria-current="page">Information</li>
+          <li class="breadcrumb-item">Shipping</li>
+          <li class="breadcrumb-item">Payment</li>
+        </ol>        
+      </div>
+    </div>
+  <!-- Info Section -->
+    <div class="col-lg-6 col-md-12 order-xxl-1 order-xl-1 order-lg-1 order-md-2 order-sm-2 border rounded-4">
+      <section class="container container-fluid">
+        <div class="row my-5 mx-0">
+          <div class="col-lg-6 col-md-12">
+            <h5 class="text text-start"> Contact information </h5>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            <h6 class="text text-lg-end text-md-start "> 
+              Already have an account?
+              <a href="../../pages/login/index.html" style="text-decoration: none">
+                Log in
+              </a>
+            </h6>
+          </div>
+          <!-- Form -->
+          <form class="needs-validation row g-3 mx-0 my-0" novalidate>
+            <!-- email id: #email1 -->
+            <div class="col-md-12"> 
+              <label for="email1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email1" placeholder="Email address" required>
+              <div class="invalid-feedback fw-bold">
+                Enter a valid email
+              </div>
+            </div>
+            <!-- Newsletter checkbox id: #checkemail -->
+            <div class="col-md-12 mb-3">
+              <input class="form-check-input" type="checkbox" value="" id="checkemail">
+              <label class="form-check-label" for="checkemail">
+                Email me with news and offers
+              </label>
+            </div>
+            <!-- Shipping address head -->
+            <div class="col-md-12">
+              <h5 class="text text-start"> Shipping address </h5>
+            </div>
+            <!-- Country/region select id: #cntry -->
+            <div class="col-md-12">
+              <label for="cntry" class="form-label">Country/Region</label>
+              <select class="form-select" id="cntry" required>
+                <option selected disabled value="">Country</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback fw-bold">
+                Please select a Country.
+              </div>
+            </div>
+            <!-- Name id: #Fname #Lname-->
+            <div class="col-lg-6 col-md-12">
+              <label for="Fname" class="form-label">First name</label>
+              <input type="text" class="form-control" id="Fname" placeholder="First name" required>
+              <div class="invalid-feedback">
+                Enter a first name
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <label for="Lname" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="Lname" placeholder="Last name" required>
+              <div class="invalid-feedback">
+                Enter a last name
+              </div>
+            </div>
+            <!-- Address id: #address1 #address2 -->
+            <div class="col-md-12">
+              <label for="address1" class="form-label">Address</label>
+              <div class="form-floating">
+                <input type="text" class="form-control" id="address1" placeholder="" required>
+                <label for="address1" class="form-label">Address</label>
+                <div class="invalid-feedback">
+                  Enter a valid address
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="address2">
+                <label for="address2" class="form-label">Apartment, suite, etc. (optional)</label>
+              </div>
+            </div>
+            <!-- City id: #city -->
+            <div class="col-lg-4 col-md-12">
+              <label for="city" class="form-label">City</label>
+              <select class="form-select" id="city" required>
+                <option selected disabled value="">City</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback fw-bold">
+                Please select a City.
+              </div>
+            </div>
+            <!-- State id: #state -->
+            <div class="col-lg-4 col-md-12">
+              <label for="state" class="form-label">State</label>
+              <select class="form-select" id="state" required>
+                <option selected disabled value="">State</option>
+                <option>...</option>
+              </select>
+              <div class="invalid-feedback fw-bold">
+                Please select a State.
+              </div>
+            </div>
+            <!-- ZIP code id: #zip -->
+            <div class="col-lg-4 col-md-12">
+              <label for="zip" class="form-label">Zip Code</label>
+              <input type="text" class="form-control" id="zip" placeholder="Zip Code" required>
+              <div class="invalid-feedback">
+                Enter a valid ZIP code.
+              </div>
+            </div>
+            <!-- Phone id: #phone -->
+            <div class="col-md-12">
+              <label for="phone" class="form-label">Phone number</label>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="phone" placeholder="Phone number" required>
+                  <label class="input-group-text">
+                    <span class="tt" data-bs-placement="top" title="In case we need to contact you about your order">
+                      <i class="bi bi-question-circle-fill"></i>
+                    </span>
+                  </label>
+                  <div class="invalid-feedback">
+                    Enter a valid Phone number.
+                  </div>
+                </div>
+            </div>
+            <!-- Save information id: #saveInfo -->
+            <div class="col-md-12">
+              <input class="form-check-input" type="checkbox" value="" id="saveInfo">
+              <label class="form-check-label" for="saveInfo">
+                Save this information for next time
+              </label>
+            </div>
+            <div class="col-lg-9 order-lg-1 col-md-12 order-md-2">
+              <a href="../../pages/cart/index.html">
+                <i class="bi bi-arrow-left"></i>
+                Return to cart
+              </a>
+            </div>
+            <div class="col-lg-3 order-lg-2 col-md-12 order-md-1">
+              <button class="btn btn-primary w-100 h-100" type="submit">Continue to shipping</button>
+            </div>
+          </form>
+        </div>  
+      </section>
+    </div>
+  <!-- Product Section -->
+    <div class="col-lg-6 col-md-12 order-xxl-2 order-xl-2 order-lg-2 order-md-1 order-sm-1 border rounded-4 px-3 py-5">
+      <section class="container container-fluid">
+        <div class="row g-5">
+          <div class="col-md-12 col-lg-6 order-md-last w-100">
+            <h4 class="d-flex justify-content-between align-items-center mb-3 mx-2">
+              <span class="text-primary">Your cart</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Product name</h6>
+                  <small class="text-muted">Brief description</small>
+                </div>
+                <span class="text-muted">$12</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Second product</h6>
+                  <small class="text-muted">Brief description</small>
+                </div>
+                <span class="text-muted">$8</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Third item</h6>
+                  <small class="text-muted">Brief description</small>
+                </div>
+                <span class="text-muted">$5</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Total (USD)</span>
+                <strong>$25</strong>
+              </li>
+            </ul>
+      </section>
+    </div>
+  </div>
+    <!-- Information page end -->
+
+    <!-- Footer -->
+    <div class="container-fluid bg-gray">
+      <footer class="pt-5 container text-white">
+        <div class="row g-4">
+          <div class="col-md-2 col-12 text-center">
+            <h5 class="">Support</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">Shipping</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">Help/FAQ</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">Instructions</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">Terms of use</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 col-12 text-center">
+            <h5 class="text-white">About</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">About us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">WB points</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">Careers</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 col-12 text-center">
+            <h5 class="text-white">More</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">Customer Gallery</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">Affiliation</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark">Media</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-dark"
+                  >Anti Slavery Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-12 offset-md-1 text-white">
+            <h4>Philippine Acrylic And Chemical Corporation</h4>
+            <p>
+              Philippine Acrylic And Chemical Corporation is a company
+              registered in the Republic of the Philippines.
+            </p>
+            <p>SEC No 99489371293</p>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between py-4 mt-4 border-top">
+          <p>
+            © 2022 Philippine Acrylic And Chemical Corporation. All rights
+            reserved.
+          </p>
+          <ul class="list-unstyled d-flex fs-2 gap-md-4">
+            <li class="ms-3">
+              <a class="text-primary" href="#"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-primary" href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-primary" href="#"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- Footer -->
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <script src="../../script.js"></script>
+    <script src="../../bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- Tooltip script -->
+    <script>
+      const tooltips = document.querySelectorAll('.tt')
+      tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+      })
+    </script>
+
+  </body>
+</html>
