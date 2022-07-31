@@ -1,9 +1,10 @@
 1. DOCUMENTATION (Deadline: August 8)
   - Page Information
-    - Site For?
-    - Expect to find or do there?
-    - Website Primary Aim?
-    - Competitor Sites?
+    - Terms
+    ✅ Site For?
+    ✅ Expect to find or do there?
+    ✅ Website Primary Aim?
+    ✅ Competitor Sites?
     - Groupmates
     - Why Choose that Color
     - Why Use that Font
