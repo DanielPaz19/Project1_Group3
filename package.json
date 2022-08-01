@@ -1,0 +1,26 @@
+{
+  "name": "wd11_major_project_team3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielPaz19/WD11_MAJOR_PROJECT_TEAM3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielPaz19/WD11_MAJOR_PROJECT_TEAM3/issues"
+  },
+  "homepage": "https://github.com/DanielPaz19/WD11_MAJOR_PROJECT_TEAM3#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
