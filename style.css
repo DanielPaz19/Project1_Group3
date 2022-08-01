@@ -10,24 +10,6 @@ nav {
   z-index: -100;
 }
 
-.bg-primary {
-  background-color: #221bf7 !important;
-}
-
-.bg-gray {
-  background-color: darkgrey !important;
-}
-
-.text-primary {
-  color: #221bf7 !important;
-}
-
-.btn-primary {
-  color: #fdfffc;
-  background-color: #221bf7;
-  border-color: #221bf7;
-}
-
 .form-control {
   border: 1px solid black !important;
 }
