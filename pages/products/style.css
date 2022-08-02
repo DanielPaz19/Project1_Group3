@@ -1,23 +1,21 @@
-.pagination > li > a
-{
-    background-color: black;
-    color: orange;
+.pagination > li > a {
+  background-color: black;
+  color: orange;
 }
 .pagination > li > a:focus,
 .pagination > li > a:hover,
 .pagination > li > span:focus,
-.pagination > li > span:hover
-{
-    color: orange;
-    background-color: #eee;
-    border-color: #ddd;
+.pagination > li > span:hover {
+  color: orange;
+  background-color: #eee;
+  border-color: #ddd;
 }
-p{
-    color: black;
+p {
+  color: black;
 }
-.card-title{
-    height: 100px;
+.card-title {
+  height: 90px;
 }
 .checked {
-    color: orange;
-  }
+  color: orange;
+}
