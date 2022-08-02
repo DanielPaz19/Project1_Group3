@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9a1cac315a.js" crossorigin="anonymous"></script>
+    <title>PACC</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <!-- Header First Row -->
+      <div
+        class="container-fluid bg-dark pt-2 px-md-5 py-md-1"
+        id="headerFirstRow"
+      >
+        <div class="row align-items-center">
+          <div class="col d-md-none text-start">
+            <button
+              class="navbar-toggler text-white"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="bi bi-list navbar-toggler-icon fs-1"></i>
+              <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+          </div>
+          <div
+            class="col-md-2 col order-md-1 order-1 text-center text-md-center pt-2 py-md-1"
+          >
+            <div class="row">
+              <div class="d-none col-md-3 med_screen_toggler p-0 text-white">
+                <span class="fs-2 text-center">
+                  <i class="bi bi-list"> </i>
+                </span>
+              </div>
+              <div class="col-md-6 p-0">
+                <a href="/index.html">
+                  <img src="/img/horizontal-logo.png" alt="" height="75px" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-md col-12 text-center order-md-2 pt-2 order-3 px-md-5"
+          >
+            <form action="" class="py-2">
+              <div class="input-group">
+                <input
+                  class="form-control px-md-3"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="What are you looking for?"
+                />
+                <button class="btn btn-lg btn-primary input-group-text">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-1 col order-md-3 order-2 text-end pe-4">
+            <!-- <div class="fs-2 text-dark">
+              <i class="bi bi-cart3"></i>
+            </div> -->
+            <a class="position-relative" href="/pages/cart/index.html">
+              <i class="bi bi-cart3 fs-2 text-white"></i>
+              <span
+                class="position-absolute start-100 translate-middle badge rounded-pill bg-danger"
+                style="top: -12px"
+              >
+                10
+                <span class="visually-hidden">cart</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Header First Row -->
+
+      <!-- Navigation Bar -->
+      <nav
+        class="container-fluid navbar navbar-expand-lg bg-light p-md-2 p-0 header__border"
+      >
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 mx-md-5 fw-bold gap-md-3"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link link-primary"
+                  aria-current="page"
+                  href="/pages/products/index.html"
+                  >Products</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary" aria-current="page">Themes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary" aria-current="page"
+                  >Latest Releases</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary" href="#">Wishlist</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary" href="#">Delivery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary" href="#">Rewards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link-primary" href="#">Help</a>
+              </li>
+            </ul>
+            <div class="d-flex flex-fill justify-content-end">
+              <a href="" class="link-primary fw-bold nav-link"> Login </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation Bar -->
+    </header>
+<!-- Breadcrumbs -->
+<div class="row m-5 p-5">
+  <div class="col-md-12">
+    <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <li class="breadcrumb-item" completed><a href="../../pages/cart/index.html" style="text-decoration: none">Cart</a></li>
+      <li class="breadcrumb-item"><a href="../../pages/checkout/index.html" style="text-decoration: none">Information</a></li>
+      <li class="breadcrumb-item"><a href="../../pages/checkout/shipping.html" style="text-decoration: none">Shipping</a></li>
+      <li class="breadcrumb-item fw-bold" aria-current="page">Payment</li>
+    </ol>        
+  </div>
+<!-- Payment Section start -->
+  <section class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 order-xxl-1 order-xl-1 order-lg-1 order-md-2 order-sm-2 px-0 mt-5 pt-3">
+    <form class="needs-validation  row" novalidate>
+      <!-- Information -->
+      <div class="col-md-12">
+        <div class="row border rounded-3">
+          <div class="col-md-12 py-2 px-3 border-bottom rounded-3 d-flex my-auto  align-items-center justify-content-between">
+            <h5>
+              Contact
+            </h5>
+            <h6>
+              Sample@email.com
+            </h6>
+            <h6>
+              <a href="../../pages/information/index.html" style="text-decoration: none;">
+                Change
+              </a>
+            </h6>
+          </div>
+          <div class="col-md-12 py-2 px-3 border-bottom rounded-3 d-flex my-auto  align-items-center justify-content-between">
+            <h5>
+              Ship to
+            </h5>
+            <h6>
+              Sample address
+            </h6>
+            <h6>
+              <a href="../../pages/information/index.html" style="text-decoration: none;">
+                Change
+              </a>
+            </h6>
+          </div>
+          <div class="col-md-12 py-2 px-3 border-bottom rounded-3 d-flex my-auto  align-items-center justify-content-between">
+            <h5>
+              Method
+            </h5>
+            <h6>
+              Shipping Option 1 $25
+            </h6>
+            <h6>
+              <a href="" style="text-decoration: none;">
+                Change
+              </a>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <!-- Information end -->
+      <!-- Payment -->
+      <div class="col-md-12 mt-5">
+        <h5>
+          Payment
+        </h5>
+      </div>
+      <div class="col-md-12 mt-1 mb-3">
+        <h6>
+          All transactions are secure and encrypted.
+        </h6>
+      </div>
+      <!-- Credit card Start -->
+      <div class="col-md-12 border rounded-3 pt-3 my-0">
+        <div class="row">
+          <div class="col-md-12 d-flex align-items-start justify-content-between border-bottom">
+            <h5>
+              Credit Card
+            </h5>
+            <h6 class="fw-lighter">
+              <i class="fa-brands fa-cc-visa fa-2x"></i>
+              <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+              <i class="fa-brands fa-cc-amex fa-2x"></i>
+              <i class="fa-brands fa-cc-discover fa-2x"></i>
+              and more...
+            </h6>
+          </div>
+          <div class="col-md-12 py-3">
+            <div class="row g-3">
+            <!-- Credit card number -->
+              <div class="col-md-12">
+                <label for="ccnumber" class="form-label">Credit card number</label>
+                <div class="input-group">
+                  <input type="tel" class="form-control" id="ccnumber" placeholder="Credit card number" required>
+                  <label class="input-group-text">
+                    <span class="tt" data-bs-placement="top" title="All transactions are secure and encrypted">
+                      <i class="fa-solid fa-lock"></i>
+                    </span>
+                  </label>
+                  <div class="invalid-feedback">
+                    Enter a valid credit card number.
+                  </div>
+                </div>
+              </div>
+            <!-- Credi card name -->
+              <div class="col-md-12">
+                <label for="ccname" class="form-label">Name on credit card</label>
+                <input type="text" class="form-control" id="ccname" placeholder="Name on credit card" required>
+                <div class="invalid-feedback">
+                  Enter a name
+                </div>
+              </div>
+              <!-- Expiration date -->
+              <div class="col-md-8">
+                  <label for="expdate" class="form-label">Expiration date (MM/YY)</label>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="expdate" placeholder="MM/YY" required>
+                    <label for="expdate" class="form-label text-secondary">Expiration date (MM/YY)</label>
+                  <div class="invalid-feedback">
+                    Enter a valid date
+                  </div>
+                </div>
+              </div>
+              <!-- Security code -->
+              <div class="col-md-4">
+                  <label for="seccode" class="form-label">Security code</label>
+                <div class="input-group">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="seccode" placeholder="Security code" required>
+                    <label for="seccode" class="form-label text-secondary">Security code</label>
+                  </div>
+                  <label class="input-group-text">
+                    <span class="tt" data-bs-placement="top" title="3-digit security code on the back of your card">
+                      <i class="fa-solid fa-circle-question"></i>
+                    </span>
+                  </label>
+                  <div class="invalid-feedback">
+                    Please enter your security code
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Credit card End -->
+      <!-- Billing Start -->
+      <div class="col-md-12 mt-5">
+        <h5>
+          Billing address
+        </h5>
+      </div>
+      <div class="col-md-12 mt-1 mb-3">
+        <h6>
+          Select the address that matches your card or payment method.
+        </h6>
+      </div>
+      <div class="col-md-12 border rounded-3 pt-3 my-0">
+        <div class="form-check border-bottom py-2" >
+          <input class="form-check-input" type="radio" name="Shipping" id="ship1" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" checked>
+          <label class="form-check-label d-flex align-items-center justify-content-between lh-sm" for="ship1">
+            <h5 class="text-dark fw-lighter">
+              Same as shipping address
+            </h5>
+          </label>
+        </div>
+        <div class="form-check py-3 mb-0">
+          <input class="form-check-input" type="radio" name="Shipping" id="ship2" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <label class="form-check-label d-flex align-items-center justify-content-between lh-sm" for="ship2">
+            <h5 class="text-dark fw-lighter">
+              Use a different billing address
+            </h5>
+          </label>
+        </div>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body mb-3 bg-secondary bg-opacity-25">
+            <div class="row row-cols-auto needs-validation g-2 px-0 mx-0 my-0">
+              <div class="col-md-12">
+                <label for="cntry" class="form-label">Country/Region</label>
+                <select class="form-select" id="cntry">
+                  <option selected disabled value="">Country</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback fw-bold">
+                  Please select a Country.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="Fname" class="form-label">First name</label>
+                <input type="text" class="form-control" id="Fname" placeholder="First name" >
+                <div class="invalid-feedback">
+                  Enter a first name
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="Lname" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="Lname" placeholder="Last name">
+                <div class="invalid-feedback">
+                  Enter a last name
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="address1" class="form-label">Address</label>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="address1" placeholder="">
+                  <label for="address1" class="form-label">Address</label>
+                  <div class="invalid-feedback">
+                    Enter a valid address
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="address2">
+                  <label for="address2" class="form-label">Apartment, suite, etc. (optional)</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="zip" class="form-label">Zip Code</label>
+                <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+                <div class="invalid-feedback">
+                  Enter a valid ZIP code.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="city" class="form-label">City</label>
+                <select class="form-select" id="city">
+                  <option selected disabled value="">City</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback fw-bold">
+                  Please select a City.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="state" class="form-label">Region</label>
+                <select class="form-select" id="state">
+                  <option selected disabled value="">Region</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback fw-bold">
+                  Please select a Region.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="phone" class="form-label">Phone number</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="phone" placeholder="Phone number">
+                    <label class="input-group-text">
+                      <span class="tt" data-bs-placement="top" title="In case we need to contact you about your order">
+                        <i class="bi bi-question-circle-fill"></i>
+                      </span>
+                    </label>
+                    <div class="invalid-feedback">
+                      Enter a valid Phone number.
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Billing end -->
+      <div class="col-md-12 my-4">
+        <h6 class="fw-bold">
+          <a href="#!" style="text-decoration: none;">
+            Important! please click here to read the information on our current shipping lead time before proceeding with your order
+          </a>
+        </h6>
+      </div>
+      <!-- Return to Shipping and Continue to payment button -->
+      <div class="col-lg-8 order-lg-1 col-md-12 order-md-2">
+        <a href="../../pages/shipping/index.html">
+          <i class="bi bi-arrow-left"></i>
+          Return to Shipping
+        </a>
+      </div>
+      <div class="col-lg-4 order-lg-2 col-md-12 order-md-1">
+        <button class="btn btn-primary w-100 h-100 btn-lg" type="submit" formaction="#!">Pay now</button>
+      </div>
+    </form>
+  </section>
+<!-- Payment Section end -->
+<!-- Product Section start -->
+  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 order-xxl-2 order-xl-2 order-lg-2 order-md-1 order-sm-1 p-3 mt-0">
+    <section class="container container-fluid">
+      <div class="row g-5">
+        <div class="col-md-12 col-lg-6 order-md-last w-100">
+          <h4 class="d-flex justify-content-between align-items-center mb-3 mx-2">
+            <span class="text-primary">Your cart</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$25</strong>
+            </li>
+          </ul>
+    </section>
+  </div>
+<!-- Product Section end -->
+
+</div>
+    <!-- Footer -->
+    <div class="container-fluid bg-dark">
+      <footer class="pt-5 container text-white">
+        <div class="row g-4">
+          <div class="col-md-2 col-12 text-center">
+            <h5 class="">Support</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">Shipping</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">Help/FAQ</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">Instructions</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">Terms of use</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">Contact us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 col-12 text-center">
+            <h5 class="text-white">About</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">About us</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">WB points</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">Careers</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-2 col-12 text-center">
+            <h5 class="text-white">More</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary"
+                  >Customer Gallery</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">Affiliation</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary">Media</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-primary"
+                  >Anti Slavery Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4 col-12 offset-md-1 text-white">
+            <h4>Philippine Acrylic And Chemical Corporation</h4>
+            <p class="text-secondary">
+              Philippine Acrylic And Chemical Corporation is a company
+              registered in the Republic of the Philippines.
+            </p>
+            <p>SEC No 99489371293</p>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between py-4 mt-4 border-top">
+          <p>
+            © 2022 Philippine Acrylic And Chemical Corporation. All rights
+            reserved.
+          </p>
+          <ul class="list-unstyled d-flex fs-2 gap-md-4">
+            <li class="ms-3">
+              <a class="text-primary" href="#"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-primary" href="#"><i class="bi bi-twitter"></i></a>
+            </li>
+            <li class="ms-3">
+              <a class="text-primary" href="#"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- Footer -->
+
+    <script src="/script.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+      const tooltips = document.querySelectorAll('.tt')
+      tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+      })
+    </script>
+        <script>
+          const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+          const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
+  </body>
+</html>
