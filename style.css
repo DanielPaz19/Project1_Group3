@@ -37,7 +37,8 @@ nav {
 
 @media only screen and (max-width: 600px) {
   .cover__image {
-    width: 130vw !important;
+    height: 25vh;
+    object-fit: cover;
   }
 
   nav {
