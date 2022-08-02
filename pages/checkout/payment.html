@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9a1cac315a.js" crossorigin="anonymous"></script>
+    <title>PACC</title>
+  </head>
+  <body>
+
+<!-- Breadcrumbs -->
+<div class="row m-5 p-5">
+  <div class="col-md-12">
+    <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <li class="breadcrumb-item" completed><a href="../../pages/cart/index.html" style="text-decoration: none">Cart</a></li>
+      <li class="breadcrumb-item"><a href="../../pages/checkout/index.html" style="text-decoration: none">Information</a></li>
+      <li class="breadcrumb-item"><a href="../../pages/checkout/shipping.html" style="text-decoration: none">Shipping</a></li>
+      <li class="breadcrumb-item fw-bold" aria-current="page">Payment</li>
+    </ol>        
+  </div>
+<!-- Payment Section start -->
+  <section class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 order-xxl-1 order-xl-1 order-lg-1 order-md-2 order-sm-2 px-0 mt-5 pt-3">
+    <form class="needs-validation  row" novalidate>
+      <!-- Information -->
+      <div class="col-md-12">
+        <div class="row border rounded-3">
+          <div class="col-md-12 py-2 px-3 border-bottom rounded-3 d-flex my-auto  align-items-center justify-content-between">
+            <h5>
+              Contact
+            </h5>
+            <h6>
+              Sample@email.com
+            </h6>
+            <h6>
+              <a href="../../pages/information/index.html" style="text-decoration: none;">
+                Change
+              </a>
+            </h6>
+          </div>
+          <div class="col-md-12 py-2 px-3 border-bottom rounded-3 d-flex my-auto  align-items-center justify-content-between">
+            <h5>
+              Ship to
+            </h5>
+            <h6>
+              Sample address
+            </h6>
+            <h6>
+              <a href="../../pages/information/index.html" style="text-decoration: none;">
+                Change
+              </a>
+            </h6>
+          </div>
+          <div class="col-md-12 py-2 px-3 border-bottom rounded-3 d-flex my-auto  align-items-center justify-content-between">
+            <h5>
+              Method
+            </h5>
+            <h6>
+              Shipping Option 1 $25
+            </h6>
+            <h6>
+              <a href="" style="text-decoration: none;">
+                Change
+              </a>
+            </h6>
+          </div>
+        </div>
+      </div>
+      <!-- Information end -->
+      <!-- Payment -->
+      <div class="col-md-12 mt-5">
+        <h5>
+          Payment
+        </h5>
+      </div>
+      <div class="col-md-12 mt-1 mb-3">
+        <h6>
+          All transactions are secure and encrypted.
+        </h6>
+      </div>
+      <!-- Credit card Start -->
+      <div class="col-md-12 border rounded-3 pt-3 my-0">
+        <div class="row">
+          <div class="col-md-12 d-flex align-items-start justify-content-between border-bottom">
+            <h5>
+              Credit Card
+            </h5>
+            <h6 class="fw-lighter">
+              <i class="fa-brands fa-cc-visa fa-2x"></i>
+              <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+              <i class="fa-brands fa-cc-amex fa-2x"></i>
+              <i class="fa-brands fa-cc-discover fa-2x"></i>
+              and more...
+            </h6>
+          </div>
+          <div class="col-md-12 py-3">
+            <div class="row g-3">
+            <!-- Credit card number -->
+              <div class="col-md-12">
+                <label for="ccnumber" class="form-label">Credit card number</label>
+                <div class="input-group">
+                  <input type="tel" class="form-control" id="ccnumber" placeholder="Credit card number" required>
+                  <label class="input-group-text">
+                    <span class="tt" data-bs-placement="top" title="All transactions are secure and encrypted">
+                      <i class="fa-solid fa-lock"></i>
+                    </span>
+                  </label>
+                  <div class="invalid-feedback">
+                    Enter a valid credit card number.
+                  </div>
+                </div>
+              </div>
+            <!-- Credi card name -->
+              <div class="col-md-12">
+                <label for="ccname" class="form-label">Name on credit card</label>
+                <input type="text" class="form-control" id="ccname" placeholder="Name on credit card" required>
+                <div class="invalid-feedback">
+                  Enter a name
+                </div>
+              </div>
+              <!-- Expiration date -->
+              <div class="col-md-8">
+                  <label for="expdate" class="form-label">Expiration date (MM/YY)</label>
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="expdate" placeholder="MM/YY" required>
+                    <label for="expdate" class="form-label text-secondary">Expiration date (MM/YY)</label>
+                  <div class="invalid-feedback">
+                    Enter a valid date
+                  </div>
+                </div>
+              </div>
+              <!-- Security code -->
+              <div class="col-md-4">
+                  <label for="seccode" class="form-label">Security code</label>
+                <div class="input-group">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="seccode" placeholder="Security code" required>
+                    <label for="seccode" class="form-label text-secondary">Security code</label>
+                  </div>
+                  <label class="input-group-text">
+                    <span class="tt" data-bs-placement="top" title="3-digit security code on the back of your card">
+                      <i class="fa-solid fa-circle-question"></i>
+                    </span>
+                  </label>
+                  <div class="invalid-feedback">
+                    Please enter your security code
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Credit card End -->
+      <!-- Billing Start -->
+      <div class="col-md-12 mt-5">
+        <h5>
+          Billing address
+        </h5>
+      </div>
+      <div class="col-md-12 mt-1 mb-3">
+        <h6>
+          Select the address that matches your card or payment method.
+        </h6>
+      </div>
+      <div class="col-md-12 border rounded-3 pt-3 my-0">
+        <div class="form-check border-bottom py-2" >
+          <input class="form-check-input" type="radio" name="Shipping" id="ship1" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample" checked>
+          <label class="form-check-label d-flex align-items-center justify-content-between lh-sm" for="ship1">
+            <h5 class="text-dark fw-lighter">
+              Same as shipping address
+            </h5>
+          </label>
+        </div>
+        <div class="form-check py-3 mb-0">
+          <input class="form-check-input" type="radio" name="Shipping" id="ship2" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          <label class="form-check-label d-flex align-items-center justify-content-between lh-sm" for="ship2">
+            <h5 class="text-dark fw-lighter">
+              Use a different billing address
+            </h5>
+          </label>
+        </div>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body mb-3 bg-secondary bg-opacity-25">
+            <div class="row row-cols-auto needs-validation g-2 px-0 mx-0 my-0">
+              <div class="col-md-12">
+                <label for="cntry" class="form-label">Country/Region</label>
+                <select class="form-select" id="cntry">
+                  <option selected disabled value="">Country</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback fw-bold">
+                  Please select a Country.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="Fname" class="form-label">First name</label>
+                <input type="text" class="form-control" id="Fname" placeholder="First name" >
+                <div class="invalid-feedback">
+                  Enter a first name
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="Lname" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="Lname" placeholder="Last name">
+                <div class="invalid-feedback">
+                  Enter a last name
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="address1" class="form-label">Address</label>
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="address1" placeholder="">
+                  <label for="address1" class="form-label">Address</label>
+                  <div class="invalid-feedback">
+                    Enter a valid address
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="address2">
+                  <label for="address2" class="form-label">Apartment, suite, etc. (optional)</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="zip" class="form-label">Zip Code</label>
+                <input type="text" class="form-control" id="zip" placeholder="Zip Code">
+                <div class="invalid-feedback">
+                  Enter a valid ZIP code.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="city" class="form-label">City</label>
+                <select class="form-select" id="city">
+                  <option selected disabled value="">City</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback fw-bold">
+                  Please select a City.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="state" class="form-label">Region</label>
+                <select class="form-select" id="state">
+                  <option selected disabled value="">Region</option>
+                  <option>...</option>
+                </select>
+                <div class="invalid-feedback fw-bold">
+                  Please select a Region.
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="phone" class="form-label">Phone number</label>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="phone" placeholder="Phone number">
+                    <label class="input-group-text">
+                      <span class="tt" data-bs-placement="top" title="In case we need to contact you about your order">
+                        <i class="bi bi-question-circle-fill"></i>
+                      </span>
+                    </label>
+                    <div class="invalid-feedback">
+                      Enter a valid Phone number.
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Billing end -->
+      <div class="col-md-12 my-4">
+        <h6 class="fw-bold">
+          <a href="#!" style="text-decoration: none;">
+            Important! please click here to read the information on our current shipping lead time before proceeding with your order
+          </a>
+        </h6>
+      </div>
+      <!-- Return to Shipping and Continue to payment button -->
+      <div class="col-lg-8 order-lg-1 col-md-12 order-md-2">
+        <a href="../../pages/shipping/index.html">
+          <i class="bi bi-arrow-left"></i>
+          Return to Shipping
+        </a>
+      </div>
+      <div class="col-lg-4 order-lg-2 col-md-12 order-md-1">
+        <button class="btn btn-primary w-100 h-100 btn-lg" type="submit" formaction="#!">Pay now</button>
+      </div>
+    </form>
+  </section>
+<!-- Payment Section end -->
+<!-- Product Section start -->
+  <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 order-xxl-2 order-xl-2 order-lg-2 order-md-1 order-sm-1 p-3 mt-0">
+    <section class="container container-fluid">
+      <div class="row g-5">
+        <div class="col-md-12 col-lg-6 order-md-last w-100">
+          <h4 class="d-flex justify-content-between align-items-center mb-3 mx-2">
+            <span class="text-primary">Your cart</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Product name</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$12</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (USD)</span>
+              <strong>$25</strong>
+            </li>
+          </ul>
+    </section>
+  </div>
+<!-- Product Section end -->
+
+</div>
+   
+
+    <script src="/script.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+    <script>
+      const tooltips = document.querySelectorAll('.tt')
+      tooltips.forEach(t => {
+        new bootstrap.Tooltip(t)
+      })
+    </script>
+        <script>
+          const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+          const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+        </script>
+  </body>
+</html>

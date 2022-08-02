@@ -1,6 +1,10 @@
+
+
 $primary: #221bf7;
 $secondary: #ccdbdc;
 $dark: #191308;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap/scss/variables";
 
+$light: $gray-200;

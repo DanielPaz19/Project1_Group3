@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../../bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../../css/style.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>PACC</title>
+  </head>
+  <body>
+
+    <!-- Shipping page start -->
+    <div class="row mx-5 my-5 px-5 g-3">
+      <!-- Breadcrumbs -->
+      <div class="col-md-12">
+        <div class="col-md-12">
+          <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <li class="breadcrumb-item" completed><a href="../../pages/cart/index.html" style="text-decoration: none">Cart</a></li>
+            <li class="breadcrumb-item"><a href="../../pages/checkout/index.html" style="text-decoration: none">Information</a></li>
+            <li class="breadcrumb-item fw-bold" aria-current="page">Shipping</li>
+            <li class="breadcrumb-item">Payment</li>
+          </ol>        
+        </div>
+      </div>
+      <!-- Info and shipping start -->
+      <form class="needs-validation col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 order-xxl-1 order-xl-1 order-lg-1 order-md-2 order-sm-2 h-100" novalidate>
+        <div class="row border mx-3 rounded-4 p-3 g-3">
+          <!-- Contact and Address -->
+          <div class="col-md-12" >
+            <div class="input-group">
+              <label class="input-group-text"><span>Contact</span></label>
+              <input type="text" class="form-control" id="con1" placeholder="Email Address" readonly>
+              <label class="input-group-text">
+                <a class="btn btn-sm btn-primary w-100 h-100" href="../../pages/information/index.html" role="button"> change</a>
+              </label>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="input-group">
+              <label class="input-group-text"><span>Address</span></label>
+              <input type="text" class="form-control" id="con1" placeholder="Address" readonly>
+              <label class="input-group-text">
+                <a class="btn btn-sm btn-primary w-100 h-100" href="../../pages/information/index.html" role="button"> change</a>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- Shipping Method -->
+        <div class="row">
+          <div class="col-md-12 p-3 g-3">
+            <h4>Shipping method</h4>
+          </div>
+        </div>
+        <div class="row border mx-3 rounded-4 p-3 g-3 mb-5">
+        <!-- Shipping Options -->
+          <div class="col-md-12 mx-auto">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="Shipping" id="ship1" required>
+              <label class="form-check-label d-flex align-items-center justify-content-between lh-sm" for="ship1">
+                <h5 class="text-dark">
+                  Shipping option 1
+                </h5>
+                <h6 class="text-dark">
+                  est 3-5 days
+                </h6>
+                <h6 class="text-dark">
+                  $25
+                </h6>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="Shipping" id="ship2" required>
+              <label class="form-check-label d-flex align-items-center justify-content-between lh-sm" for="ship2">
+                <h5 class="text-dark">
+                  Shipping option 2
+                </h5>
+                <h6 class="text-dark">
+                  est 13-15 days
+                </h6>
+                <h6 class="text-dark">
+                  $5
+                </h6>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="Shipping" id="ship3" required>
+              <label class="form-check-label d-flex align-items-center justify-content-between lh-sm" for="ship3">
+                <h5 class="text-dark">
+                  Shipping option 3
+                </h5>
+                <h6 class="text-dark">
+                  est 7-10 days
+                </h6>
+                <h6 class="text-dark">
+                  $15
+                </h6>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="Shipping" id="ship4" required>
+              <label class="form-check-label d-flex align-items-center justify-content-between lh-sm" for="ship4">
+                <h5 class="text-dark">
+                  Shipping option 4
+                </h5>
+                <h6 class="text-dark">
+                  est 23-35 days
+                </h6>
+                <h6 class="text-dark">
+                  free
+                </h6>
+              </label>
+              <div class="invalid-feedback">
+                Please select a shipping method
+              </div>
+            </div>
+          </div>
+          <!-- Return to Information and Continue to payment button -->
+          <div class="col-lg-8 order-lg-1 col-md-12 order-md-2">
+            <a href="../../pages/information/index.html">
+              <i class="bi bi-arrow-left"></i>
+              Return to Information
+            </a>
+          </div>
+          <div class="col-lg-4 order-lg-2 col-md-12 order-md-1">
+            <button class="btn btn-primary w-100 h-100 btn-sm" type="submit" formaction="../../pages/checkout/payment.html">Continue to payment</button>
+          </div>
+        </div>
+      </form>
+    <!-- Info and shipping end -->
+    <!-- Product Section start -->
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 order-xxl-2 order-xl-2 order-lg-2 order-md-1 order-sm-1 border rounded-4 p-3 mx-0 mb-3 mt-0 ">
+        <section class="container container-fluid">
+          <div class="row g-5">
+            <div class="col-md-12 col-lg-6 order-md-last w-100">
+              <h4 class="d-flex justify-content-between align-items-center mb-3 mx-2">
+                <span class="text-primary">Your cart</span>
+                <span class="badge bg-primary rounded-pill">3</span>
+              </h4>
+              <ul class="list-group mb-3">
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Product name</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">$12</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Second product</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">$8</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between lh-sm">
+                  <div>
+                    <h6 class="my-0">Third item</h6>
+                    <small class="text-muted">Brief description</small>
+                  </div>
+                  <span class="text-muted">$5</span>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                  <span>Total (USD)</span>
+                  <strong>$25</strong>
+                </li>
+              </ul>
+        </section>
+      </div>
+    <!-- Product Section end -->
+    </div>
+>
+
+    <script src="/script.js"></script>
+    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
