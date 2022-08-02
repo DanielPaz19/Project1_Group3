@@ -11,17 +11,18 @@
   ✅ Site Map
 
 2. CREATE PAGES (Deadline: August 8)
+  - Home
   - About 
   ✅ Cart
-  - Checkout
-  - Contact Us
+  ✅ Checkout
+  ✅ Contact Us
   ✅ Log-in
   - My Account
-  - Payment
+  ✅ Payment
   ✅ Product Details
   ✅ Products
-  - Shipping
-  - Wishlist
+  ✅ Shipping
+  ✅ Wishlist
 
 3. FINALIZE DESIGN (Deadline: August 9)
   - Check Spacing
