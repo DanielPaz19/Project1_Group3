@@ -19,3 +19,12 @@ p {
 .checked {
   color: orange;
 }
+.card-title-fluid {
+  padding-left: 1rem;
+}
+.fa {
+  padding-left: 1rem;
+}
+.card-subtitle {
+  padding-left: 1rem;
+}
