@@ -23,7 +23,7 @@ const showNavBar = function () {
 
 // Hide Nav when scrolled
 window.addEventListener("scroll", function () {
-  const scrollLimit = 10;
+  const scrollLimit = 100;
 
   if (window.pageYOffset >= scrollLimit) {
     if (navToggler.className.includes("showed")) return;
