@@ -93,8 +93,10 @@ window.addEventListener("resize", function () {
 // Prevent page from reloading
 formSearch.addEventListener("click", function (e) {
   e.preventDefault();
+  e.stopPropagation();
 });
 
 inputSearch.addEventListener("click", function (e) {
   e.preventDefault();
+  e.stopPropagation();
 });
