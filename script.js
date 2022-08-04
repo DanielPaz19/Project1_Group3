@@ -2,6 +2,8 @@
 const navToggler = document.querySelector(".med_screen_toggler");
 const navBar = document.querySelector("nav");
 const headerFirstRow = document.querySelector("#headerFirstRow");
+const formSearch = document.querySelector(".form--search");
+const inputSearch = document.querySelector(".input--search");
 
 const hideNavBar = function () {
   headerFirstRow.classList.add("header__border");
@@ -87,3 +89,12 @@ window.addEventListener("resize", function () {
     );
   });
 })();
+
+// Prevent page from reloading
+formSearch.addEventListener("click", function (e) {
+  e.preventDefault();
+});
+
+inputSearch.addEventListener("click", function (e) {
+  e.preventDefault();
+});
