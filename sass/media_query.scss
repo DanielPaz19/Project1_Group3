@@ -1,0 +1,10 @@
+@media only screen and (max-width: 600px) {
+  .cover__image {
+    height: 25vh;
+    object-fit: cover;
+  }
+
+  nav {
+    position: absolute !important;
+  }
+}
