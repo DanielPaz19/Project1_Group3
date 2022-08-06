@@ -4,7 +4,24 @@
     object-fit: cover;
   }
 
+  .banner  {
+    min-width: 800px;
+  }
+
+  .overflow-x-scroll {
+    overflow-x: scroll
+  }
+  
   nav {
     position: absolute !important;
   }
+
+  .container--latest__card {
+    min-width: 1300px;
+  }
+
+  .category--img {
+    border-radius: 10px;
+  }
+
 }
