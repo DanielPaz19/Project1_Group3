@@ -13,9 +13,7 @@
 p {
   color: black;
 }
-.card-title {
-  height: 90px;
-}
+
 .checked {
   color: orange;
 }
@@ -27,4 +25,10 @@ p {
 }
 .card-subtitle {
   padding-left: 1rem;
+}
+.card--new-design {
+  max-width: 18rem;
+}
+.card img {
+  height: 250px;
 }
