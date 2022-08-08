@@ -32,3 +32,10 @@ p {
 .card img {
   height: 250px;
 }
+.pagination {
+  padding-top: 1rem;
+  padding-right: 4rem;
+}
+#navbarDropdownMenuLink {
+  padding-right: 30rem;
+}
