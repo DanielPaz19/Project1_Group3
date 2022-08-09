@@ -1,4 +1,4 @@
-.pagination > li > a {
+/* .pagination > li > a {
   background-color: black;
   color: orange;
 }
@@ -9,7 +9,7 @@
   color: orange;
   background-color: #eee;
   border-color: #ddd;
-}
+} */
 p {
   color: black;
 }
@@ -38,4 +38,13 @@ p {
 }
 #navbarDropdownMenuLink {
   padding-right: 30rem;
+}
+.card-title {
+  padding-left: 0.45rem;
+}
+.card-text {
+  padding-left: 0.45rem;
+}
+.d-flex {
+  height: 500;
 }
