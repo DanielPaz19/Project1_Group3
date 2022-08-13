@@ -64,12 +64,16 @@ nav {
 }
 
 .card--products {
-  max-width: 15.5rem;
+  max-width: 16rem;
 }
 
 .icon--wishlist {
   bottom: 20px;
   right: 20px
+}
+
+.card--wishlist img  {
+  cursor: pointer !important;
 }
 
 
@@ -115,6 +119,10 @@ nav {
 
   .card--products {
     max-width: 11rem;
+  }
+
+  .card--products img {
+    height: 100%;
   }
 
 }
