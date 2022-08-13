@@ -30,6 +30,10 @@ nav {
   z-index: -100;
 }
 
+.nav--pagination {
+  z-index: 0
+}
+
 .form-control {
   border: 1px solid black !important;
 }
@@ -59,6 +63,19 @@ nav {
   max-width: 15.5rem;
 }
 
+.card--products {
+  max-width: 16rem;
+}
+
+.icon--wishlist {
+  bottom: 20px;
+  right: 20px
+}
+
+.card--wishlist img  {
+  cursor: pointer !important;
+}
+
 
 .category--1 img, .category--2 img, .category--3 img {
   object-fit: cover;
@@ -83,6 +100,11 @@ nav {
     position: absolute !important;
   }
 
+  .nav--pagination {
+    position: static !important;
+  }
+
+
   .container--latest__card {
     min-width: 1300px;
   }
@@ -93,6 +115,14 @@ nav {
 
   .category--1 img {
     max-height: 300px;
+  }
+
+  .card--products {
+    max-width: 11rem;
+  }
+
+  .card--products img {
+    height: 100%;
   }
 
 }
