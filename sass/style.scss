@@ -30,6 +30,10 @@ nav {
   z-index: -100;
 }
 
+.nav--pagination {
+  z-index: 0
+}
+
 .form-control {
   border: 1px solid black !important;
 }
@@ -56,6 +60,10 @@ nav {
 }
 
 .card--latest__release{
+  max-width: 15.5rem;
+}
+
+.card--products {
   max-width: 15.5rem;
 }
 
@@ -88,6 +96,11 @@ nav {
     position: absolute !important;
   }
 
+  .nav--pagination {
+    position: static !important;
+  }
+
+
   .container--latest__card {
     min-width: 1300px;
   }
@@ -98,6 +111,10 @@ nav {
 
   .category--1 img {
     max-height: 300px;
+  }
+
+  .card--products {
+    max-width: 11rem;
   }
 
 }
